@@ -7,7 +7,14 @@ public class TurtleWorld
         World turtleWorld = new World();
         Turtle turtle = new Turtle(turtleWorld);
         turtle.setPenColor(Color.RED);
-        turtle.penDown();
-        turtle.forward(50);
-    }
+        yay = 100;
+        while (yay > 0);
+            turtle.penDown();
+            turtle.forward(50);
+            wait(1);
+            yay = yay - 1;
+            
+        
+
+   }
 }
