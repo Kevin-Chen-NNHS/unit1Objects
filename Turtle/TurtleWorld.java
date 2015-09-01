@@ -6,13 +6,21 @@ public class TurtleWorld
     {
         World turtleWorld = new World();
         Turtle turtle = new Turtle(turtleWorld);
-        turtle.setPenColor(Color.BLUE);
-        int yay = 100;
-        while (yay > 0);
-            turtle.penDown();
-            turtle.forward(50);
+        Turtle turtle2 = new Turtle(turtleWorld);
+        turtle.setPenColor(Color.CYAN);
+        turtle2.setPenColor(Color.CYAN);
+        int yay = 9000;
+        int nay = 360;
+        int kay = 420;
+        while (yay > 0)
+        { turtle.penDown();
+            turtle.forward(100);
             turtle.turn(30);
             yay = yay - 1;
+            
+         
+        }
+       
             
         
 
