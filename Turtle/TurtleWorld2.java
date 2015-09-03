@@ -2,11 +2,11 @@ import java.awt.Color;
 import java.util.Random;
 
 
-public class TurtleWorld
+public class TurtleWorld2
 {
     public static void main(String args[])
     {
-        World turtleWorld = new World();
+        World turtleWorld = new World(1000,1000);
         Turtle turtle = new Turtle(turtleWorld);
         Turtle turtle2 = new Turtle(turtleWorld);
         Turtle turtle3 = new Turtle(turtleWorld);
@@ -17,24 +17,7 @@ public class TurtleWorld
         int nay = 1000;
         int kay = 1000;
         
-        turtle2.moveTo (turtle.getXPos(),turtle.getYPos() );
-        
-        while (yay > 0)
-        { turtle.penDown();
-            turtle.forward(100);
-            turtle.turn(30);
-            yay = yay - 1;
-            
-         
-        }
-        while (nay > 0)
-        {   
-         turtle2.penDown();
-         turtle2.forward(100);
-         turtle2.turn(60);
-         nay = nay - 1;
-        
-        }
+       
         while (kay > 0)
         {   
          turtle3.penDown();
@@ -44,7 +27,11 @@ public class TurtleWorld
          turtle3.turn(90);
          turtle3.forward(20);
          turtle3.turn(45);
-         turtle3.turn(-60);
+         turtle3.forward(100);
+         turtle3.turn(-90);
+         turtle3.forward(5);
+         
+         
          
          
          kay = kay - 1;
